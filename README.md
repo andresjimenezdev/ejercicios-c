@@ -1,6 +1,14 @@
 # Ejercicio de Programacion en C
 Este repositorio fue creado para almacenar los ejercicios que voy solucionando mientras aprendo a programar con el lenguaje de programacion C.
 
+## Ejercicio 4 - [(Solución Parte A)](https://github.com/andresjimenezdev/ejercicios-c/blob/master/04_piedra_papel_tijera_A.c)
+### Conocimientos previos = Estructuras de control, Tipos de dato simples, Modularización, Arreglos
+Crear un programa que organice una batalla de piedra, papel y tijera.
+Para que sea completamente justo, cada participante anota en un arreglo todas sus jugadas. Esto es, es un arreglo de caracteres de 5 elementos donde cada elemento representa una jugada tienendo: **R**ock **P**apel y **T**ijera.
+
+* **Parte A**: Se pide hacer una funcion que, dados dos arreglos, devuelva **1** si el jugador 1 es el ganador, **2** si el jugador 2 es el ganador o **0** si hay empate.
+* **Parte B**: Supongamos ahora que las reglas cambian, cada jugador puede elegir todas las jugadas que quiere (no mas de 100), se llevara **1** punto el primero que gane **5** veces y ademas, se llevara un punto extra si eligio menos jugadas que su rival. Crear un algoritmo que solicite las jugadas a cada jugador y luego determine el ganador. Elegir las convenciones necesarias.
+
 ## Ejercicio 3 - [(Solución)](https://github.com/andresjimenezdev/ejercicios-c/blob/master/03_las_dos_torres_parte_uno.c)
 ### Conocimientos previos = Estructuras de control, Tipos de dato simples, Modularización
 Crear un programa que represente la épica batalla del Abismo de Helm, en esta primera parte, debe determinar el porcentaje de humedad en el ambiente, la velocidad del viento y el estado de ánimo de Legolas y Gimli.

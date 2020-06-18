@@ -88,7 +88,7 @@ int main() {
         INTERVALO_PUNTOS_ANIMO
     );
 
-    /* Calculando el animo de legolas */
+    /* Calculando el animo de Gimli */
     printf("\nVeamos como esta el animo de Gimli.\n");
     printf("-------------------------------------\n");    
     animo_gimli = animo_personaje(
@@ -107,7 +107,8 @@ int main() {
 }
 
 
-/* Procedimiento que recibe un numero entero que debe estar entre un rango de numeros. Asigna el numero a la variable recibida como parametro, y no devuelve nada. */
+/* Procedimiento que recibe un numero entero que debe estar entre un rango de numeros. Asigna el
+numero a la variable recibida como parametro, y no devuelve nada. */
 void pedir_numero(int* numero, int min, int max) {
     scanf("%d", numero);
     while(!(numero_valido(*numero, min, max))) {
@@ -116,12 +117,14 @@ void pedir_numero(int* numero, int min, int max) {
     }
 }
 
-/* Funcion que valida que el numero digitado por el usuario, se encuentre dentro del rango. Devuelve un booleano segun corresponda. */
+/* Funcion que valida que el numero digitado por el usuario, se encuentre dentro del rango. Devuelve 
+un booleano segun corresponda. */
 bool numero_valido(int numero, int min, int max) {
     return (numero >= min && numero <= max);
 }
 
-/* Procedimiento que recibe una letra que debe concordar con alguna de las definidas en las constantes. Asigna la letra a la variable recibida como parametro, y no devuelve nada. */
+/* Procedimiento que recibe una letra que debe concordar con alguna de las definidas en las 
+constantes. Asigna la letra a la variable recibida como parametro, y no devuelve nada. */
 void pedir_letra(char* letra) {
     scanf(" %c", letra);
     while(!(letra_valida(*letra))) {
@@ -130,7 +133,8 @@ void pedir_letra(char* letra) {
     }
 }
 
-/* Funcion que valia que la letra ingresa sea valida para el algoritmo. Devuelve un booleano segun corresponda. */
+/* Funcion que valida que la letra ingresa sea valida para el algoritmo. Devuelve un booleano segun 
+corresponda. */
 bool letra_valida(char letra) {
     if(letra == TARDE || letra == NOCHE || letra == MANIANA) 
         return true;
@@ -142,7 +146,10 @@ bool letra_valida(char letra) {
         return false;
 }
 
-/* Funcion que asigna un puntaje a cada letra valida segun su uso. Las letras del primer IF representan los primeros valores de cada seccion, el segundo IF los segundos valores y asi sucesivamente. El return 0 pertenece al pie izquierdo ya que este NO otorga puntaje. Devuelve un numero entero con el puntaje onbtenido. */
+/* Funcion que asigna un puntaje a cada letra valida segun su uso. Las letras del primer IF 
+representan los primeros valores de cada seccion, el segundo IF los segundos valores y asi 
+sucesivamente. El return 0 pertenece al pie izquierdo ya que este NO otorga puntaje. Devuelve un 
+numero entero con el puntaje onbtenido. */
 int puntaje_letra(char letra, int intervalo_de_puntos) {
     if(letra == TARDE || letra == PIE_DER || letra == GUIZO)
         return intervalo_de_puntos;
@@ -157,7 +164,8 @@ int puntaje_letra(char letra, int intervalo_de_puntos) {
         return 0;
 }
 
-/* Funcion que calcula la velocidad del viento segun el dia del mes ingresado por el usuario. Devuelve un numero entero con el puntaje onbtenido. */
+/* Funcion que calcula la velocidad del viento segun el dia del mes ingresado por el usuario. Devuelve 
+un numero entero con el puntaje onbtenido. */
 int velocidad_del_viento(int numero, int interv_dias, int min, int max, int interv_velocidad) {
     if((numero >= min) && (numero <= interv_dias))
         return interv_velocidad * 3;
@@ -169,7 +177,8 @@ int velocidad_del_viento(int numero, int interv_dias, int min, int max, int inte
         return 0;
 }
 
-/* Funcion que calcula el puntaje segun las horas de sueño de cada personaje. Devuelve un numero entero con el puntaje onbtenido. */
+/* Funcion que calcula el puntaje segun las horas de sueño de cada personaje. Devuelve un numero 
+entero con el puntaje onbtenido. */
 int puntaje_suenio(int numero, int interv_horas, int min, int max, int interv_puntos) {
     if((numero >= min) && (numero <= interv_horas))
         return 0;
@@ -181,7 +190,8 @@ int puntaje_suenio(int numero, int interv_horas, int min, int max, int interv_pu
         return 0;
 }
 
-/* Funcion que calcula el animo del cada personaje. Pide todos los datos necesarios para el calculo y devuelve un letra con el resultado. */
+/* Funcion que calcula el animo del cada personaje. Pide todos los datos necesarios para el calculo y 
+devuelve un letra con el resultado. */
 char animo_personaje(char* pie, char* cena, int* horas_de_suenio, int min, int max, int intervalo) {
     int puntaje = 0;
 
