@@ -1,7 +1,7 @@
 # Ejercicio de Programacion en C
 Este repositorio fue creado para almacenar los ejercicios que voy solucionando mientras aprendo a programar con el lenguaje de programacion C.
 
-## Ejercicio 4 - [(Solución Parte A)](https://github.com/andresjimenezdev/ejercicios-c/blob/master/04_piedra_papel_tijera_A.c)
+## Ejercicio 4 - [(Solución Parte A)](https://github.com/andresjimenezdev/ejercicios-c/blob/master/04_piedra_papel_tijera_A.c) [(Solución Parte B)](https://github.com/andresjimenezdev/ejercicios-c/blob/master/04_piedra_papel_tijera_B.c)
 ### Conocimientos previos = Estructuras de control, Tipos de dato simples, Modularización, Arreglos
 Crear un programa que organice una batalla de piedra, papel y tijera.
 Para que sea completamente justo, cada participante anota en un arreglo todas sus jugadas. Esto es, es un arreglo de caracteres de 5 elementos donde cada elemento representa una jugada tienendo: **R**ock **P**apel y **T**ijera.
@@ -49,6 +49,13 @@ El resultado final obtenido, definirá el ánimo buscado:
 * Entre 5 y 20 (ambos inclusive): El ánimo será malo (M).
 * Entre 21 y 35 (ambos inclusive): El ánimo será regular (R).
 * Entre 36 y 50 (ambos inclusive): El ánimo será bueno (B).
+
+Luego que pueda ser ejecutado realizando las preguntas correspondientes y, por último, deberá 
+mostrarse por pantalla un mensaje que contenga todos los datos obtenidos.
+
+```c
+Resumen: 75 50 B R
+```
 
 ## Ejercicio 2 - [(Solución)](https://github.com/andresjimenezdev/ejercicios-c/blob/master/02_partida_de_ajedrez.c)
 ### Conocimientos previos = Estructuras de control, Tipos de dato simples, Modularización
