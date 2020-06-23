@@ -1,6 +1,17 @@
 # Ejercicio de Programacion en C
 Este repositorio fue creado para almacenar los ejercicios que voy solucionando mientras aprendo a programar con el lenguaje de programacion C.
 
+## Ejercicio 5 - [(Solución Parte A)](https://github.com/andresjimenezdev/ejercicios-c/blob/master/05_batalla_naval.c)
+Crear un programa que represente una partida del famoso juego de mesa "Batalla Naval". Para esto, se crearan algunas funciones que ayuden al desarrollo del juego.
+
+La matriz recibida tendra **~** en las coordenadas donde haya agua, **B** en las coordenadas donde haya un barquito, **X** en las coordenadas donde se haya disparado al agua y **T** en las coordenadas donde se haya tocado a un barco.
+
+En resumen, el programa debe:
+
+* Crear un procedimiento que reciba una matriz de caracteres, las coordenas del disparo y con esta informacion actualizar la matriz, poniendo una **X** si el disparo fue al agua o una **T** si el disparo toco un barco.
+* Crear un procedimiento que permita a un usuario cargar barquitos en el tablero.
+* Crear una funcion que reciba una matriz representando a un tablero y devuelva true si se ha ganado la partida.
+
 ## Ejercicio 4 - [(Solución Parte A)](https://github.com/andresjimenezdev/ejercicios-c/blob/master/04_piedra_papel_tijera_A.c) [(Solución Parte B)](https://github.com/andresjimenezdev/ejercicios-c/blob/master/04_piedra_papel_tijera_B.c)
 ### Conocimientos previos = Estructuras de control, Tipos de dato simples, Modularización, Arreglos
 Crear un programa que organice una batalla de piedra, papel y tijera.
